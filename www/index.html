@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app='app' ng-controller ='myController'>
+<head>
+	<title>Movie App</title>
+	<link rel="stylesheet" type="text/css" href="materialized/bower_components/materialize/dist/css/materialize.css">
+</head>
+<body  style="background-color: #808080"> 
+
+<!-- <div ng-view=""></div>
+<main ng-view></main>
+
+ -->
+
+ <h2 align="center"><strong>Movie Details</strong></h2>
+<div class='table-Responsive' >
+<table class="table table hover">
+        <thead>
+          <tr>
+              <th data-field="id">ID</th>
+              <th data-field="id">Movie</th>
+              <th data-field="Description">Decription</th>
+              <th data-field="Rating">Rating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr ng-repeat="x in data">
+            <td>{{x.ID}}</td>
+            <td>{{x.Name}}</td>
+            <td>{{x.Description}}</td>
+            <td>{{x.Rating}}</td>
+          </tr>
+               </tbody>
+      </table>
+
+
+</div>
+ <!-- jquery -->
+  <script type="text/javascript" src="materialized/bower_components/jquery/dist/jquery.js"></script>
+  <!-- js -->
+ <script type="text/javascript" src="materialized/bower_components/materialize/dist/js/materialize.js"></script>
+<!--  Angular js-->
+<script type="text/javascript" src="materialized/bower_components/angular/angular.js"></script>
+<!-- Angular-route -->
+<!-- s -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/controllers/myController.js"></script>
+</body>
+</html>
